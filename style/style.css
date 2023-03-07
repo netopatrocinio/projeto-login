@@ -32,8 +32,8 @@ main {
     overflow:hidden;
 
     background-color: white;
-    height: 500px;
-    width: 250px;
+    height: 568px;
+    width: 320px;
     border-radius: 20px;
 }
 
@@ -41,14 +41,11 @@ main {
     display: block;
     background: #5f2c82 url("../imagens/arvore.jpg") no-repeat;
     background-size: cover;
-    height: 200px;
+    height: 50%;
 }
 #login > #formulario {
     display: block;
     padding: 10px;
     text-indent: 20px;
 
-}
-#login > #formulario > p {
-    
 }
