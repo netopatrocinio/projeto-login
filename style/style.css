@@ -32,9 +32,12 @@ main {
     overflow:hidden;
 
     background-color: white;
-    height: 568px;
-    width: 320px;
+    height: 500px;
+    width: 250px;
     border-radius: 20px;
+
+    transition: width .3 , height .3;
+    transition-timing-function: ease;
 }
 
 #login > #imagem {
