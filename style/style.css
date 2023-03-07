@@ -28,7 +28,7 @@ main {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50% , -50%);
+    
     overflow:hidden;
 
     background-color: white;
@@ -36,15 +36,16 @@ main {
     width: 250px;
     border-radius: 20px;
 
-   
+    transition: width .2s, heigth .2s;
     transition-timing-function: ease;
+    transform: translate(-50% , -50%);
 }
 
 #login > #imagem {
     display: block;
     background: #5f2c82 url("../imagens/arvore.jpg") no-repeat;
     background-size: cover;
-    height: 50%;
+    height: 45%;
 }
 #login > #formulario {
     display: block;
@@ -60,17 +61,78 @@ main {
     font-size: .8em;
     text-indent: 20px;
 }
+
+form > div.campo {
+    background-color: #5f2c82;
+    border: 2px solid #5f2c82;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0px;
+}
+.camo  > label {
+    display: none;
+}
+.campo > span {
+    color: white;
+    
+    font-size: 2em;
+    width: 40px;
+    padding: 4px;
+}
+div.campo > input {
+    background-color: #49a09d;
+    font-size: 1em;
+    height: 100%;
+    width: calc(100% - 45px);
+    
+    border: none;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-12px);
+}
+
+div.campo > input:focus-within {
+    background-color: white;
+}
+
 #entrar > input {
     font-weight: bolder;
     font-size: medium;
     padding: 5px;
-    width: 184px;
-    margin: left;
-    display: block;
-    border: 0px;
-    border-radius: 10px;
-    margin-top: 10px;
-    background-color: red;
-    color: white;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
     
+    display: block;
+    border: none;
+    border-radius: 10px;
+    
+    background-color: #49a09d;
+    color: white;
+    cursor: pointer;
+}
+#entrar > input:hover {
+    background-color: red;
+}
+#ancora > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+#ancora {
+    
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+    background-color: #49a09d;
+    width: 100%;
+    padding: 6px;
+    border-radius: 10px;
+    
+}
+#ancora:hover {
+    background-color: red;
 }
